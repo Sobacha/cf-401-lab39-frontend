@@ -19,6 +19,9 @@ let plugins = [
   }),
 ];
 
+
+console.log('---------------------', process.env.API_URL);
+
 if(production) {
   plugins = plugins.concat([new CleanPlugin(), new UglifyPlugin()]);
 }
